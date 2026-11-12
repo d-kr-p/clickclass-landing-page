@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ClickClass | Smarter Attendance, Faster Learning</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/styles.css') }}"
+    />
+    <link
+      rel="icon"
+      type="type/png"
+      href="{{url_for('static',filename='img/logo.png') }}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="{{url_for('static',filename='img/logo.png') }}"
+          style="height: 55px"
+          alt="ClickClass Logo"
+        />
+        <div class="logo-text">ClickClass</div>
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#journey">Journey</a>
+        <a href="#tech">Tech Stack</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="https://clickclass-main.streamlit.app/" class="btn-pill">
+          Start AI Attendance
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            height="20px"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="badge">Welcome to ClickClass</div>
+      <h1>
+        Smarter<br />
+        <span>Attendance,</span><br />
+        Faster <span>Learning</span>
+      </h1>
+      <p>
+        Making classroom management simple and smart. Track attendance
+        effortlessly, save time with automation, and focus more on what matters
+        most — learning
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://clickclass-main.streamlit.app/" class="btn-cta">
+          Start AI Attendance
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            height="20px"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+          </svg>
+        </a>
+
+        <a href="#journey" class="link-action">Explore Journey</a>
+      </div>
+
+      <div class="floating-card card-left">
+        <div class="card-img">
+          <img
+            src="{{url_for('static',filename='img/demo/click-teacher-flow-5.1-photo-attendance.png') }}"
+            alt="landing img 1"
+          />
+        </div>
+      </div>
+
+      <div class="floating-card card-right">
+        <div class="card-img">
+          <img
+            src="{{url_for('static',filename='img/demo/click-landing.png') }}"
+            alt="landing img 2"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section id="features" class="features">
+      <h2>Innovative Features</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="f-icon-box">📸</div>
+          <h3>AI Face Analysis</h3>
+          <p>
+            Powered by intelligent AI technology, our system detects and
+            identifies students from a single classroom photo, delivering fast,
+            seamless, and reliable attendance tracking.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="f-icon-box">🎤</div>
+          <h3>AI-Powered Voice Recognition</h3>
+          <p>
+            Students simply say "Present" one at a time, while our AI-powered
+            voice recognition system verifies their unique vocal patterns in
+            real time for fast and reliable attendance tracking.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="f-icon-box">📱</div>
+          <h3>Smart QR Enrollment</h3>
+          <p>
+            Generate unique QR codes for each course to enable quick and
+            hassle-free student enrollment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="teacher-flow">
+      <div class="flow-container">
+        <div
+          class="section-tag"
+          style="text-align: center; margin-bottom: 40px; display: block"
+        >
+          -- Workflow --
+        </div>
+        <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px">
+          The Teacher's Journey
+        </h2>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">STEP 01</div>
+            <h3>Secure Login</h3>
+            <p>
+              Start your session through our secure authentication portal. Your
+              data is protected with encryption and seamlessly synchronized
+              across your devices.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-landing-flow-1-login.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">STEP 02</div>
+            <h3>Interactive Dashboard</h3>
+            <p>
+              Manage all your subjects, track attendance records, organize
+              student rosters, and monitor classroom activities from one
+              beautiful, unified dashboard.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-teacher-flow-2-dashboard.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">STEP 03</div>
+            <h3>Course Management</h3>
+            <p>
+              Add a subject in seconds and let ClickClass handle the setup,
+              student organization, and attendance tracking.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-teacher-flow-3-create-course.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">STEP 04</div>
+            <h3>FaceID Attendance</h3>
+            <p>
+              Use advanced AI-powered facial recognition to simplify classroom
+              attendance. Capture a single classroom photo, and ClickClass
+              automatically detects and recognizes enrolled students, helping
+              you mark attendance quickly and accurately.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-teacher-flow-5.1-photo-attendance.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">STEP 05</div>
+            <h3>Voice ID Attendance</h3>
+            <p>
+              Take attendance hands-free with AI-powered voice recognition.
+              Students speak their names one by one, and the system identifies
+              enrolled students using voice matching to automatically record
+              attendance.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-teacher-flow-5.2-voice-attendance.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">STEP 06</div>
+            <h3>Actionable Records</h3>
+            <p>
+              Review and manage historical attendance records with ease. Monitor
+              AI confidence scores, download detailed CSV reports, and track
+              long-term student attendance to make informed decisions.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-teacher-flow-5-see-stored-records.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="tech-stack">
+      <div class="section-tag">-- Our Backend --</div>
+      <h2>Advanced Tech Stack</h2>
+
+      <div class="tech-grid">
+        <div class="tech-item">
+          <div class="tech-card">
+            <div class="t-icon">⚡</div>
+            <h4>Streamlit & Flask</h4>
+            <p>
+              Interactive Streamlit application & UI featuring a modern,
+              Flask-designed landing page.
+            </p>
+
+            <span class="tech-tag">Platform</span>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-card">
+            <div class="t-icon">🙂</div>
+            <h4>Face Registration</h4>
+            <p>
+              Using FaceRecognition and Dlib for accurate facial detection and
+              identification.
+            </p>
+
+            <span class="tech-tag">Vision AI</span>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-card">
+            <div class="t-icon">🎙️</div>
+            <h4>Voice Embeddings</h4>
+            <p>
+              Using Resemblyzer and Librosa to create unique student voice
+              signatures for accurate identification.
+            </p>
+
+            <span class="tech-tag">Audio AI</span>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-card">
+            <div class="t-icon">☁️</div>
+            <h4>Supabase Cloud</h4>
+            <p>
+              Powered by a secure PostgreSQL database with real-time data
+              synchronization and authentication.
+            </p>
+
+            <span class="tech-tag">Storage</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="student-journey" class="teacher-flow">
+      <div class="flow-container">
+        <div
+          class="section-tag"
+          style="text-align: center; margin-bottom: 40px; display: block"
+        >
+          -- Workflow --
+        </div>
+        <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px">
+          The Student's Journey
+        </h2>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">Phase 01</div>
+            <h3>Biometric Registration</h3>
+            <p>
+              ClickClass stores their biometric profiles securely, enabling
+              quick and convenient identification during future classroom
+              attendance sessions.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-student-landing-flow-1-login.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">Phase 02</div>
+            <h3>Instant Enrollmenet</h3>
+            <p>
+              Students can enroll in courses within seconds using unique QR
+              codes or course links shared by their teachers. No lengthy
+              registration forms or complicated steps — just scan, join, and get
+              started. Students securely register their Face ID and Voice ID
+              just once.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-student-flow-2-course-enroll.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-content">
+            <div class="step-badge">Phase 03</div>
+            <h3>Personal Dashboard</h3>
+            <p>
+              A unified dashboard that helps students monitor their attendance
+              percentage across all subjects, view attendance history, and
+              receive real-time updates. Stay informed about your academic
+              progress and never miss an important attendance update.
+            </p>
+          </div>
+          <div class="flow-image">
+            <img
+              src="{{url_for('static',filename='img/demo/click-student-flow-3-dashboard.png') }}"
+              alt="flow image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gray-section">
+      <h2>Ready to upgrade your classroom?</h2>
+      <p>
+        Empower educators with a smarter way to manage their classrooms.
+        Experience seamless, AI-powered attendance tracking and intelligent
+        classroom management with just one click.
+      </p>
+
+      <a href="" class="btn-white">Start AI Attendance Now</a>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img
+              src="{{url_for('static',filename='img/logo.png') }}"
+              style="height: 55px"
+              alt="ClickClass Logo"
+            />
+            <div class="logo-text">ClickClass</div>
+          </div>
+          <p>
+            Bringing innovation to education through AI-powered attendance and
+            next-generation classroom technology
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+
+          <ul>
+            <li>
+              <a href="#features">AI Attendance</a>
+            </li>
+
+            <li>
+              <a href="#features">Smart Class Planner</a>
+            </li>
+
+            <li>
+              <a href="#tech">Tech Stack</a>
+            </li>
+
+            <li>
+              <a href="#student-journey">Student Portal</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Experience</h4>
+
+          <ul>
+            <li>
+              <a href="#journey">Teacher Journey</a>
+            </li>
+
+            <li>
+              <a href="#student-journey">Student Journey</a>
+            </li>
+
+            <li>
+              <a href="#features">Voice ID Roll-call</a>
+            </li>
+
+            <li>
+              <a href="#features">Face ID Scan</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+
+          <ul>
+            <li>
+              <a href="#">About us</a>
+            </li>
+
+            <li>
+              <a href="#features">Hot it works</a>
+            </li>
+
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ClickClass AI. Built for educators everywhere.</p>
+      </div>
+    </footer>
+  </body>
+</html>
